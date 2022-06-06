@@ -1,19 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+int main(){
 
-int main()
-{
+    int num,sum=0;
 
-   int a,rev_num,sum = 0;
-   printf("Enter numbers: ");
-   scanf("%d",&a);
-   while(a!=0){
-    rev_num = a%10;
-    sum = sum+rev_num;
-    a = a/10;
-   }
+    printf("Enter numbers: ");
+    scanf("%d", &num);
+    for (int i = 0; i < num; i++)
+    {
+        sum = sum + i;
+        printf("Number is %d \n", i);
+    }
 
-   printf("The sum of digits: %d",sum);
+    printf("Total sum %d", sum);
 
     return 0;
 }
